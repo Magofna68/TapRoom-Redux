@@ -13,7 +13,6 @@ function EditKeg(props) {
         brand: event.target.brand.value,
         content: event.target.content.value,
         price: event.target.price.value,
-        quantity: event.target.quantity.value - 1,
         id: keg.id
       })
   }

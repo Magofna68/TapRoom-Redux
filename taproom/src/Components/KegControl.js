@@ -56,11 +56,11 @@ class KegControl extends React.Component {
     });
   }
 
-  handleDecrement = ({ quantity }) => {
-    const newQuantity = { quantity } - 1
+  handleDecrementClick = ({ quantity }) => {
+    const newQuantity = ({ quantity } - 1)
     if ({ newQuantity } !== 0) {
       this.setState({
-        quantity: quantity - 1,
+        quantity: newQuantity,
         formOnPage: false,
         selectedKeg: null,
         editing: false
@@ -68,14 +68,19 @@ class KegControl extends React.Component {
     } else
       return (
         this.setState({
+          quantity: newQuantity,
           formOnPage: false,
           selectedKeg: null,
           editing: false
         })
       )
   };
+  
+// _______________________________________________________
+// _________  Different ideas I tried ____________________
+  
 
-  // handleDecrement = () => {
+// handleDecrement = () => {
   //   console.log({ keg.quantity })
   //   this.setState({
   //     quantity: this.state.quantity - 1
@@ -122,7 +127,8 @@ class KegControl extends React.Component {
         keg={this.state.selectedKeg}
         onClickingDelete={this.handleDeletingKeg}
         onClickingEdit={this.handleEditClick}
-        onClickingDecrement={this.handleDecrement} />;
+        onClickDecrement={this.handleDecrementClick}
+      />;
       buttonText = "Return to Kegs";
     } else if (this.state.formOnPage) {
       currentlyVisibleState = <NewKegForm
