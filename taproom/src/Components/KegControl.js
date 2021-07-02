@@ -12,7 +12,8 @@ class KegControl extends React.Component {
       formOnPage: false,
       masterKegList: [],
       selectedKeg: null,
-      editing: false
+      editing: false,
+      quantity: 124
     };
   }
 
@@ -56,13 +57,30 @@ class KegControl extends React.Component {
   }
 
   handleDecrement = ({ quantity }) => {
-    const newQuantity = this.state.quantity - 1
-    if ({ quantity } > 0) {
-      this.setState({ quantity: newQuantity })
-    } else {
-      return null;
-    }
+    const newQuantity = { quantity } - 1
+    if ({ newQuantity } !== 0) {
+      this.setState({
+        quantity: quantity - 1,
+        formOnPage: false,
+        selectedKeg: null,
+        editing: false
+      })
+    } else
+      return (
+        this.setState({
+          formOnPage: false,
+          selectedKeg: null,
+          editing: false
+        })
+      )
   };
+
+  // handleDecrement = () => {
+  //   console.log({ keg.quantity })
+  //   this.setState({
+  //     quantity: this.state.quantity - 1
+  //   });
+  // };
 
   // handleDecrementClick = (event) => {
   //   this.setState({quantity: event.target.value});
