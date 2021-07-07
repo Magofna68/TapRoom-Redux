@@ -13,7 +13,6 @@ class KegControl extends React.Component {
       masterKegList: [],
       selectedKeg: null,
       editing: false,
-      quantity: 124
     };
   }
 
@@ -56,31 +55,41 @@ class KegControl extends React.Component {
     });
   }
 
-  handleDecrementClick = ({ quantity }) => {
-    const newQuantity = ({ quantity } - 1)
-    if ({ newQuantity } !== 0) {
-      this.setState({
-        quantity: newQuantity,
-        formOnPage: false,
-        selectedKeg: null,
-        editing: false
-      })
-    } else
-      return (
-        this.setState({
-          quantity: newQuantity,
-          formOnPage: false,
-          selectedKeg: null,
-          editing: false
-        })
-      )
+  handleDecrementClick = (id) => {
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (selectedKeg.quantity > 1) {
+      selectedKeg.quantity -= 1
+      this.setState({ selectedKeg: selectedKeg });
+    } else {
+      selectedKeg.quantity = 1
+      selectedKeg.quantity = "This keg is empty"
+      this.setState({ selectedKeg: selectedKeg });
+    }
   };
-  
-// _______________________________________________________
-// _________  Different ideas I tried ____________________
-  
+  //   const newQuantity = ({ quantity } - 1)
+  //   if ({ newQuantity } !== 0) {
+  //     this.setState({
+  //       quantity: newQuantity,
+  //       formOnPage: false,
+  //       selectedKeg: null,
+  //       editing: false
+  //     })
+  //   } else
+  //     return (
+  //       this.setState({
+  //         quantity: newQuantity,
+  //         formOnPage: false,
+  //         selectedKeg: null,
+  //         editing: false
+  //       })
+  //     )
+  // };
 
-// handleDecrement = () => {
+  // _______________________________________________________
+  // _________  Different ideas I tried ____________________
+
+
+  // handleDecrement = () => {
   //   console.log({ keg.quantity })
   //   this.setState({
   //     quantity: this.state.quantity - 1
