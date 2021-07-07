@@ -17,7 +17,6 @@ function KegList(props) {
           id={keg.id}
           key={keg.id} />
       )}
-      {/* <button onClick={() => onClickingDecrement(keg.quantity)}>-</button> */}
     </React.Fragment>
   );
 }
@@ -25,7 +24,6 @@ function KegList(props) {
 KegList.propTypes = {
   kegList: PropTypes.array,
   onKegSelection: PropTypes.func,
-  // onDecrementClick: PropTypes.func
 };
 
 export default KegList;

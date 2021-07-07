@@ -62,54 +62,10 @@ class KegControl extends React.Component {
       this.setState({ selectedKeg: selectedKeg });
     } else {
       selectedKeg.quantity = 1
-      selectedKeg.quantity = "This keg is empty"
+      selectedKeg.quantity = "None: this keg is empty"
       this.setState({ selectedKeg: selectedKeg });
     }
   };
-  //   const newQuantity = ({ quantity } - 1)
-  //   if ({ newQuantity } !== 0) {
-  //     this.setState({
-  //       quantity: newQuantity,
-  //       formOnPage: false,
-  //       selectedKeg: null,
-  //       editing: false
-  //     })
-  //   } else
-  //     return (
-  //       this.setState({
-  //         quantity: newQuantity,
-  //         formOnPage: false,
-  //         selectedKeg: null,
-  //         editing: false
-  //       })
-  //     )
-  // };
-
-  // _______________________________________________________
-  // _________  Different ideas I tried ____________________
-
-
-  // handleDecrement = () => {
-  //   console.log({ keg.quantity })
-  //   this.setState({
-  //     quantity: this.state.quantity - 1
-  //   });
-  // };
-
-  // handleDecrementClick = (event) => {
-  //   this.setState({quantity: event.target.value});
-  // }
-  // DecreaseItem = () => {
-  //   this.setState(prevState => {
-  //     if(prevState.quantity > 0) {
-  //       return {
-  //         quantity: prevState.quantity - 1
-  //       }
-  //     } else {
-  //       return null;
-  //     }
-  //   });
-  // }
 
   handleEditingKegInList = (kegToEdit) => {
     const editedMasterKegList = this.state.masterKegList
