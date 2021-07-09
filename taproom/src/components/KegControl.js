@@ -52,7 +52,7 @@ class KegControl extends React.Component {
   }
 
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.props.masterKegList.filter(keg => keg.id === id)[0];
+    const selectedKeg = this.props.masterKegList[id];
     this.setState({ selectedKeg: selectedKeg });
   }
 
@@ -71,16 +71,16 @@ class KegControl extends React.Component {
   }
 
   handleDecrementClick = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    const selectedKeg = this.props.masterKegList[id];
     if (selectedKeg.quantity > 1) {
       selectedKeg.quantity -= 1
       this.setState({ selectedKeg: selectedKeg });
     } else {
-      selectedKeg.quantity = 1
-      selectedKeg.quantity = "None: this keg is empty"
+      selectedKeg.quantity = "0 - this keg is empty"
       this.setState({ selectedKeg: selectedKeg });
     }
   };
+
 
   handleEditingKegInList = (kegToEdit) => {
     const { dispatch } = this.props;
