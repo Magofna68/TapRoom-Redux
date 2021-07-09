@@ -1,4 +1,5 @@
 import formVisibleReducer from '../../reducers/form-visible-reducer.js';
+import * as c from '../../actions/actionTypes';
 
 describe("formVisibleReducer", () => {
 
