@@ -1,10 +1,13 @@
 import React from 'react';
+import BeerHeader from './../img/BeerHeader.jpeg';
 
 function Header() {
   return (
     <React.Fragment>
-      <h2>Tap-Room:</h2>
-      <h3>Bring on the Beer pt. 2</h3>
+      <img src={BeerHeader} alt="beer"></img>
+      <hr></hr>
+      <h1>Tap-Room:</h1>
+      <h3>Bring on the Beer</h3>
     </React.Fragment>
   );
 }
