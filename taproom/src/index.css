@@ -16,16 +16,10 @@ background-image:
   padding-bottom: 15%;
   border-top: yellow;
   border: solid;
-  border-radius: 12%;
-/* background-repeat: no-repeat;
-background-size:75%;
-background-position-x: center;
-background-position-y: bottom;
-/* margin-bottom: 1%; */
-background-blend-mode: darken;
-position: sticky;
-margin-left: 2%;
-margin-right: 2%;
+  background-blend-mode: darken;
+  position: sticky;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 code {
@@ -65,9 +59,6 @@ img {
   margin-top: -2.23%;
   padding-bottom: 49px;
   padding-top: 0;
-  /* padding-bottom: 50px; */
-  /* position: fixed; */
-  /* border-radius: 9.8%; */
 }
 
 h2 {

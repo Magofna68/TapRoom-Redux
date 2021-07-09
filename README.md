@@ -1,6 +1,54 @@
-# Tap-Room (W/ Redux)
+<p align="center">
+  <big>||  &nbsp;&nbsp;&nbsp;<u><b> 
+  TapRoom (w/ Redux)
+  </b></u>&nbsp;&nbsp;&nbsp;  ||</big>
+</p>
+<p align="center">
+  <small>July 9th, 2021.</small>
+</p>
+<br>
+<p align="center">Changing the world one line of code at a time.</p>
+    <p align="center">
+        <a href="https://github.com/Magofna68/MessageBoard.Solution/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/Magofna68/MessageBoard.Solution.svg?style=plastic">
+        </a>
+        ¨
+        <a href="https://github.com/Magofna68/MessageBoard.Solution/stargazers">
+            <img src="https://img.shields.io/github/license/Magofna68/PierresTreats.Solution?style=plastic">
+        </a>
+        ¨
+        <a href="https://github.com/Magofna68/MessageBoard.Solution/issues">
+            <img src="https://img.shields.io/github/last-commit/Magofna68/TapRoom-Redux?style=plastic">
+        </a>
+        ¨
+        <a href="https://linkedin.com/in/Magofna68">
+            <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=plastic&logo=linkedin&colorB=2867B2">
+        </a>
+    </p>
+<p align="center">
+    <!-- Project Avatar/Logo -->
+    <p align="center">
+        <a href="https://github.com/Magofna68">
+            <strong>Magofna68</strong>
+        </a>
+    </p>
+    <p align="center">
+      __________________________________________________
+    </p>
+    <br>
+    <p align="center"><a href="https://github.com/Magofna68">
+        <img src="https://avatars.githubusercontent.com/u/80496559?v=4">
+    </a></p>
+    <br>
+    <!-- GitHub Link -->
+    <!-- Project Shields -->
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+------------------------------
+
+## About the Project:
+This project was completed during my 17th week at Epicodus (3rd week in React). It offers functionality to a brewhouse to update their list of beverages, while also allowing for decrementation with each sale of beer.
+This project utilizes Redux to host all state within the store.
 
 ## Available Scripts
 

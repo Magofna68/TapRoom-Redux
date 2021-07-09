@@ -109,7 +109,7 @@ class KegControl extends React.Component {
     if (this.state.editing) {
       currentlyVisibleState = <EditKeg
         keg={this.state.selectedKeg} onEditKeg={this.handleEditingKegInList} />
-      buttonText = "Return to Kegs";
+      buttonText = "Return to Beer menu";
     } else if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetails
         keg={this.state.selectedKeg}
@@ -117,16 +117,16 @@ class KegControl extends React.Component {
         onClickingEdit={this.handleEditClick}
         onClickDecrement={this.handleDecrementClick}
       />;
-      buttonText = "Return to Kegs";
+      buttonText = "Return to Beer menu";
     } else if (this.props.formOnPage) {
       currentlyVisibleState = <NewKegForm
         onNewKegCreation={this.handleAddingNewKegToList} />
-      buttonText = "Return to Kegs"
+      buttonText = "Return to list"
     } else {
       currentlyVisibleState = <KegList
         kegList={this.props.masterKegList}
         onKegSelection={this.handleChangingSelectedKeg} />;
-      buttonText = "Add Keg"
+      buttonText = "Add Beer"
     }
     return (
       <React.Fragment>
