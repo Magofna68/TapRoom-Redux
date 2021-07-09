@@ -21,10 +21,11 @@ background-image:
 background-size:75%;
 background-position-x: center;
 background-position-y: bottom;
-margin-bottom: 1%;
+/* margin-bottom: 1%; */
 background-blend-mode: darken;
 position: sticky;
-padding-top: 2%; */
+margin-left: 2%;
+margin-right: 2%;
 }
 
 code {
@@ -61,12 +62,12 @@ button:hover {
 }
 
 img {
-  margin-top: -2.5%;
+  margin-top: -2.23%;
   padding-bottom: 49px;
   padding-top: 0;
   /* padding-bottom: 50px; */
   /* position: fixed; */
-  border-radius: 9.8%;
+  /* border-radius: 9.8%; */
 }
 
 h2 {
