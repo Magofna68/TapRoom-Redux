@@ -1,4 +1,5 @@
 import kegListReducer from '../../reducers/keg-list-reducer';
+import * as c from '../../actions/actionTypes'
 
 describe('kegListReducer', () => {
   let action;
