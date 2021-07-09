@@ -12,7 +12,7 @@ describe('rootReducer', () => {
   test('Should return default state if no action type is recognized', () => {
     expect(rootReducer({}, { type: null })).toEqual({
       masterKegList: {},
-      formVisibleOnPage: false
+      formOnPage: false
     });
   });
 
@@ -21,7 +21,7 @@ describe('rootReducer', () => {
   });
 
   test('Check that initial state of formVisibleReducer matches root reducer', () => {
-    expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
+    expect(store.getState().formOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   });
 
   test('Check that ADD_KEG action works for kegListReducer and root reducer', () => {
@@ -43,7 +43,7 @@ describe('rootReducer', () => {
       type: c.TOGGLE_FORM
     }
     store.dispatch(action);
-    expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
+    expect(store.getState().formOnPage).toEqual(formVisibleReducer(undefined, action));
   });
 
 });
