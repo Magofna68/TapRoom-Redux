@@ -5,6 +5,7 @@ import KegDetails from './KegDetails';
 import EditKeg from './EditKeg';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import * as c from '../actions/actionTypes';
 
 
 class KegControl extends React.Component {
@@ -133,7 +134,7 @@ class KegControl extends React.Component {
   }
 }
 
-KegControl.PropTypes = {
+KegControl.propTypes = {
   masterKegList: PropTypes.object
 };
 
