@@ -10,13 +10,21 @@ body {
 div#root {
 background-image:
   url("https://images.unsplash.com/photo-1554153499-bf906ed1f830?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80");
-background-repeat: no-repeat;
-background-size:85%;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 15%;
+  border-top: yellow;
+  border: solid;
+  border-radius: 12%;
+/* background-repeat: no-repeat;
+background-size:75%;
 background-position-x: center;
 background-position-y: bottom;
-/* margin-bottom: 10%; */
+margin-bottom: 1%;
 background-blend-mode: darken;
-position:sticky;
+position: sticky;
+padding-top: 2%; */
 }
 
 code {
@@ -53,10 +61,12 @@ button:hover {
 }
 
 img {
-  margin-bottom: 20%;
-  padding-top: 25px;
-  padding-bottom: 0px;
+  margin-top: -2.5%;
+  padding-bottom: 49px;
+  padding-top: 0;
+  /* padding-bottom: 50px; */
   /* position: fixed; */
+  border-radius: 9.8%;
 }
 
 h2 {
@@ -65,6 +75,14 @@ h2 {
 }
 
 h1 {
-  color: whitesmoke;
-  padding-top: 0;
+  color: yellow;
+  /* padding-top: -20%; */
+}
+
+div#padding {
+ padding-bottom: 0px;
+}
+
+#title {
+  padding-top: -100px;
 }
