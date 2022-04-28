@@ -2,7 +2,7 @@ body {
   margin: 0;
   color: white;
   background-color: black;
-  font-family: fantasy;
+  /* font-family: fantasy; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -16,10 +16,11 @@ background-image:
   padding-bottom: 15%;
   border-top: yellow;
   border: solid;
-  background-blend-mode: darken;
+  /* background-blend-mode: darken; */
   position: sticky;
   margin-left: 2%;
   margin-right: 2%;
+  flex-direction: row;
 }
 
 code {
@@ -48,17 +49,22 @@ button {
   font-weight: 900;
   background-color: yellow;
   font-family:monospace;
+  cursor: pointer;
+  transition: ease-in all .5s;
 }
 
 button:hover {
   background-color: black;
   color: yellow;
+  cursor: pointer;
+  transform:scale(1.02);
 }
 
 img {
-  margin-top: -2.23%;
+  /* margin-top: -2.23%;
   padding-bottom: 49px;
-  padding-top: 0;
+  padding-top: 0; */
+  width: 100%;
 }
 
 h2 {
@@ -71,10 +77,43 @@ h1 {
   /* padding-top: -20%; */
 }
 
-div#padding {
+/* div#padding {
  padding-bottom: 0px;
-}
+} */
 
 #title {
   padding-top: -100px;
+}
+
+div.row{
+width: 100%;
+}
+
+.card{
+  display: inline-block;
+  border: solid 2px;
+  border-color: white;
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+  margin: 0 0 10px 0;
+  transition: all ease 0.5s;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+}
+  .card:hover{
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+    /* color: white; */
+    opacity: 0.75;
+    color: white;
+    /* font-weight: 700; */
+  }
+
+.container-fluid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

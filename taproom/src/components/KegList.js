@@ -1,13 +1,20 @@
 import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function KegList(props) {
   return (
     <React.Fragment>
-      <div id="container">
+      {/* <div id="container"> */}
       <hr />
       <h2>- Beer On Tap -</h2>
+      <Container fluid>
+        <Row>
+        <Col>
       {Object.values(props.kegList).map((keg) =>
         <Keg
           whenKegClicked={props.onKegSelection}
@@ -19,7 +26,10 @@ function KegList(props) {
           id={keg.id}
           key={keg.id} />
       )}
-      </div>
+      </Col>
+      </Row>
+      </Container>
+      {/* </div> */}
     </React.Fragment>
   );
 }
